@@ -39,7 +39,7 @@ Fizz
 Fizz Buzz
 16
 Bonus:
-Only work on the bonus after you have finished everything else. For the bonus, modify your FizzBuzz program to print Rock Paper Scissors Lizard Spock (Links to an external site.)Links to an external site. next to every even number over ten. Only print one of the words... Rock  or Paper or Scissors, etc ... and after you print Rock then then for the next even number print Paper, then Scissors, etc... So, yes, you have to keep track of the word you just printed and then use the next word in the list.
+Only work on the bonus after you have finished everything else. For the bonus, modify your FizzBuzz program to print Rock Paper Scissors Lizard Spock next to every even number over ten. Only print one of the words... Rock  or Paper or Scissors, etc ... and after you print Rock then then for the next even number print Paper, then Scissors, etc... So, yes, you have to keep track of the word you just printed and then use the next word in the list.
 
 If the number has a word next to it (as would be the case for 30) then print FizzBuzz Scissors in place of the 30. (note: 30 may not resolve to Scissors depending on your starting number).
 
