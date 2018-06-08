@@ -1,17 +1,7 @@
-/// This is a basic FizzBuzz program that prints out a list of integer adding pre-defined words to some of them
-// and testing for unique conditions
-
 import java.util.ArrayList;
 import java.util.Random;
+
 public class FizzBuzz {
-
-    public static void main(String[] args) {
-
-        ArrayList <String> output = new ArrayList<String>();
-        storeNumberList(output);
-        System.out.println(printList(output));
-    }
-
     // The method does not accept any arguments, and prints the list
     public static void storeNumberList(ArrayList<String> output) {
         Random rnd = new Random ();
