@@ -47,32 +47,28 @@ public class FizzBuzz {
             if (i%3 == 0 && i%5 == 0) {
                 if (i > 10 && i % 2 == 0) {output.add("Fizz " + " Buzz " + gameItems[counter]); counter++;}
                 else output.add("Fizz " + " Buzz");
-                if (counter >= gameItems.length) counter = 0;
             }
             else if (i%3 == 0) {
                 if (i > 10 && i % 2 == 0) {output.add("Fizz " + gameItems[counter]); counter++;}
                 else output.add("Fizz");
-                if (counter >= gameItems.length) counter = 0;
             }
             else if (i%5 == 0) {
                 if (i > 10 && i % 2 == 0) {output.add("Buzz " + gameItems[counter]); counter++;}
                 else output.add("Buzz");
-                if (counter >= gameItems.length) counter = 0;
 
             }
             else if (i%7 == 0) {
-                if (i > 10 && i % 2 == 0) {output.add (String.valueOf(i) + " - " + gameItems[counter] + " - multiple of 7");}
+                if (i > 10 && i % 2 == 0) {output.add (String.valueOf(i) + " - " + gameItems[counter] + " - multiple of 7"); counter++;}
                 else output.add (String.valueOf(i) + " - multiple of 7"); // prints next to the numbers
-                if (counter >= gameItems.length) counter = 0;
             }
             else if (i > 10 && i % 2 == 0) {
                 output.add(String.valueOf(i) + " - " + gameItems[counter]);
                 counter++;
-                if (counter >= gameItems.length) counter = 0;
             }
             else {
                 output.add(String.valueOf(i));
             }
+            if (counter >= gameItems.length) counter = 0;
         }
         int last = 1 + rnd.nextInt(100);
             if (last%3 == 0 && last%5 == 0) {
