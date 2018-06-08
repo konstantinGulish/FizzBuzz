@@ -9,7 +9,7 @@ public class FizzBuzz {
         printNumberList();
     }
 
-    // The method does not accept any arguments, and returns a string representation of the list
+    // The method does not accept any arguments, and prints the list
     private static void printNumberList() {
         int first = 1;
         int last = 100;
@@ -31,6 +31,9 @@ public class FizzBuzz {
             }
             else if (i%5 == 0) {
                 System.out.println("Buzz");
+            }
+            else if (i%7 == 0) {
+                System.out.println (i + " - multiple of 7"); // prints next to the numbers
             }
             else {
                 System.out.println(i);
