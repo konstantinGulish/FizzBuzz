@@ -16,11 +16,11 @@ public class FizzBuzz {
         Random rnd = new Random();
         for (int i=1; i <=100; i++){
             if (i==1)  {
-                first = 10 + rnd.nextInt (100); // generates the first random number for the list
+                first = 1 + rnd.nextInt (100); // generates the first random number for the list
                 System.out.println(first);
             }
             if (i==100)  {
-                last = 1 + rnd.nextInt (100); // generates the last random number for the list
+                last = 10+ rnd.nextInt (100); // generates the last random number for the list
                 System.out.println(last);
             }
             else if (i%3 == 0 && i%5 == 0) {
@@ -38,6 +38,9 @@ public class FizzBuzz {
         }
         if (first == last){
             System.out.println ("Shazam!!"); // prints if the first and last random numbers are the same
+        }
+        if (Math.abs(last-first) < 10) {
+            System.out.println ("This won't take long."); // prints if the first and last random numbers are less than 10 apart
         }
     }
 }
